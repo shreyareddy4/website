@@ -1,0 +1,42 @@
+@media only screen and (max-width:780px){
+    body{
+        font-size:80%;
+    }
+    .sidebar{
+        width:25%;
+        height:100%;
+        line-height: 0;
+        padding-bottom: 0;
+    }
+    header{
+        width:100%;
+    }
+    #left-area{
+        padding-left:70px;
+    }
+    .tables{
+       margin-top:25%;
+       margin-left:13%;
+       font-size:70%;
+    }
+    #uname,
+    #email,
+    #age{
+        display:none;
+    }
+    #contact{
+        display:none;
+    }
+    #bell{
+        display:none;
+    }
+    #user{
+        float:right;
+    }
+}
+@media only screen and (min-width:780px){
+    #sidebar{
+        display:block !important;
+    }
+
+}

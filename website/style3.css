@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    background-color: white;
+    color: black;
+    font-family:'Lato','Arial';
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+/*sidebar*/
+.sidebar{
+    background:grey;
+    margin-top:55px;
+    width:10%;
+    position: fixed;
+}
+div ul{
+    background-color: rgba(128, 128, 128, 0.685);
+    height:100%;
+    width:100%;
+    list-style:none;
+}
+div ul li{
+    line-height: 35px;
+}
+div ul li a{
+    position:relative;
+    color:black;
+    text-decoration: none;
+    font-size: 60%;
+    padding-left: 20px;
+    display:block;
+}
+div ul li a:hover{
+    color:green;
+}
+div ul ul{
+    display:none;
+}
+div ul ul li{
+    line-height:35px;
+    border-bottom:none;
+}
+div ul ul li a{
+    font-size:40%;
+    padding-left:10px;
+}
+.fa-chevron-left {
+    position: absolute;
+    right:10px;
+    transform:translateY(-50%);
+    font-size:10px;
+}
+div ul li a:hover .fa-chevron-left{
+    transform: translateY(-50%) rotate(-180deg);
+}
+/*header*/
+header{
+    background-color: rgba(0, 0, 255, 0.781);
+    width:100%;
+    position:fixed;
+    padding:10px;
+    height:60px;
+    color:white;
+}
+div a{
+    color:white;
+    text-decoration: none;
+}
+#left-area{
+    color:white;
+    padding-left:8px;
+}
+
+/*table*/
+.content-table{
+    border-collapse:collapse;
+    margin:25px 0;
+    font-size:100%;
+    min-width:200px;
+    margin-left:16%;
+    margin-top:10%;
+}
+.content-table thread tr{
+    color:black;
+    text-align:left;
+}
+.content-table th,
+.content-table td
+{
+    padding:8px 8px;
+}
+.content-table tr th{
+    border:1px solid black;
+}
+.content-table tr td{
+    border:1px solid black;
+}
+h4{
+    margin-top:14px;
+    font-size:50%;
+}
+input{
+    width:50px;
+    margin:2%;
+}
+/*sidebar displaying*/
+
+#sidebar_btn{
+    float:left;
+    padding:0;
+}
+label #sidebar_btn{
+    z-index:1;
+    color:white;
+    position:fixed;
+    cursor:pointer;
+    left:50px;
+    font-size:20px;
+    margin:0;
+    transition: 0.5s;
+    transition-property: color;
+}
+#search-bar{
+    display:none;
+}
+label #sidebar_btn:hover{
+    color:green;
+}
+#check:checked ~ .sidebar{
+    left:-190px;
+}
+#check:checked ~ .sidebar a{
+    display:none;
+}
+#check{
+    display:none;
+}
+#check:checked ~ .sidebar a{
+    font-size:20px;
+    margin-left: 170px;
+    width:40px;
+}
+#bell{
+    padding:5px;
+    padding-bottom: 7px;
+}
+#contact{
+    padding:5px;
+    padding-bottom: 7px;
+}
+#user{
+    padding:5px;
+    padding-bottom: 7px;
+    margin-right:0;
+}
